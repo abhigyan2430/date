@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-image: url('https://rare-gallery.com/uploads/posts/132672-lovers-couple-pair-beach-sunset-silhouette-4k.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#noButton,
+#yesButton{
+  position: absolute;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+#noButton {
+  margin-left: 150px;
+}
+
+#yesButton {
+  margin-right: 150px;
+}
+
+#submitButton {
+  margin-left: 150px;
+}
+.header_text {
+  font-family: "Nunito";
+  font-size: 50px;
+  font-weight: bold;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fa038f;
+
+}
+.header_t1 {
+  font-family: "Nunito";
+  font-size: 50px;
+  font-weight: bold;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fa038f;
+
+}
+
+
+.text {
+  font-family: "Nunito";
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #ff0101;
+  color: white;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #ff0101;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+  margin-left: 50%;
+}
+
+p a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.25;
+}
+
+@media (max-width: 600px) {
+
+  #noButton,
+  #yesButton 
+  {
+    position: static;
+    margin: 0;
+  }
+
+  .header_text {
+    font-size: 36px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    margin: 8px 0;
+  }
+}

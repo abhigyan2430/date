@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            background-image: url('https://rare-gallery.com/uploads/posts/132672-lovers-couple-pair-beach-sunset-silhouette-4k.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header_text {
+            color: #fa038f;
+        }
+
+        .gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+  margin-left: 50%;
+}
+
+p a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.25;
+}
+
+        .col {
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            
+        }
+        
+
+        #date {
+            width: 100%;
+            
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        #dateLabel{
+            font-family: 'Roboto', sans-serif;
+            color: rgb(30, 0, 255);
+            font-weight: bold;
+        }
+
+        .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #ff0101;
+  color: white;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #ff0101;
+}
+
+        #submitButton {
+  
+  align-items: center;
+}
+
+        #result {
+            margin-top: 10px;
+            color: green;
+        }
+
+        @media (max-width: 600px) {
+
+           
+
+
+            
+
+  #submitButton
+  {
+    position: static;
+    margin: 0;
+  }
+
+  .header_text {
+    font-size: 36px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    margin: 8px 0;
+  }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Set The Date</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.postimg.cc/wTDG30TB/yes.gif" alt="Cute animated illustration">
+        </div>
+    </div>
+    <!-- Form for user input -->
+    <div class="col">
+        <label for="date" id="dateLabel" >Date</label>
+        <input type="date" class="form-control" id="date" name="date">
+    </div>
+    <div>
+    <button  onclick="nextPage()" class="btn btn-primary" id="submitButton">Submit</button>
+    <!-- Display the date chosen by the user -->
+    <p id="result"></p>
+        <script>
+            function nextPage() {
+                window.location.href = "thanks.html";
+            }
+
+
+        </script>
+    </div>     
+   
+   
+     
+    
+</body>
+
+</html>
